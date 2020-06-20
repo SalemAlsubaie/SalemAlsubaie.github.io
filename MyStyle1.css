@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+body{
+overflow-x: hidden;
+font-family: 'Lato', sans-serif;
+color: #505962;
+
+}
+
+.offset:before{
+  display: block;
+  content: "";
+  height: 6rem;
+  margin-top: -3rem
+}
+
+
+/*--- Navigation --*/
+.navbar{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.6)!important;
+}
+
+.navbar-brand img{
+  height: 5rem;
+}
+
+.navbar-nav li{
+  padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #1ebba3;
+}
+
+
+/*---- landing page ---*/
+
+.home-inner{
+  background-image: url(img/computers.png);
+}
+
+.caption{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+.caption h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.caption h3{
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg{
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+
+/*-- About me section ---*/
+
+.narrow{
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+
+.narrow h1{
+  font-size: 2.4rem;
+}
+
+.btn-secondary{
+  border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: .6rem 1.2rem;
+margin: 1rem;
+color: white;
+background-color: #1ebba3;
+border-color: #1ebba3;
+}
+
+.btn-secondary:hover{
+
+background-color: #189582;
+border-color: #189582;
+}
+
+
+/*--- Education section ---*/
+
+.jumbotron{
+  margin-bottom: 0;
+padding: 2rem 0 3.5rem;
+border-radius: 0;
+}
+ .jumbotron h1{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.card-text{
+  text-align: center;
+  font-size: 20px;
+}
+ .card{
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+
+ .card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+/*--- Skills section ---*/
+.container h1{
+
+  text-align: center;
+}
+
+.container h3{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.progress2 { /*--- Web Development ---*/
+padding: 6px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar2 {
+  width: 60%;
+  background-color: #1ebba3;
+  animation: progressAnimation2 6s;
+}
+
+@keyframes progressAnimation2 {
+  0%   { width: 5%; }
+  100% { width: 60%; }
+}
+
+.progress3 { /*--- Database Developer ---*/
+  padding: 6px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar3 {
+  height: 18px;
+  border-radius: 30px;
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar3 {
+  width: 50%;
+  background-color: #1ebba3;
+  animation: progressAnimation3 6s;
+}
+
+@keyframes progressAnimation3 {
+  0%   { width: 5%; }
+  100% { width: 50%; }
+}
+
+.progress4 { /*--- Cyber Security ---*/
+  padding: 6px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar4 {
+  height: 18px;
+  border-radius: 30px;
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar4 {
+  width: 100%;
+  background-color: #1ebba3;
+  animation: progressAnimation4 6s;
+}
+@keyframes progressAnimation4 {
+  0%   { width: 5%; }
+  100% { width: 100%; }
+}
+
+.progress5 { /*--- computer Proficient ---*/
+  padding: 6px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar5 {
+  height: 18px;
+  border-radius: 30px;
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar5 {
+  width: 100%;
+  background-color: #1ebba3;
+  animation: progressAnimation5 6s;
+}
+
+@keyframes progressAnimation5 {
+  0%   { width: 5%; }
+  100% { width: 100%; }
+}
+
+/*--- Start Courses section ---*/
+#courses .card{
+  padding: 8px;
+margin: 8px;
+
+}
+
+
+/*--- Experiences section ---*/
+#experiences h1{
+  text-align: center;
+}
+
+#experiences .card{
+  padding: 8px;
+margin: 8px;
+
+}
+
+/*-- Footer section --*/
+footer{
+  background-color: #40474e;
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 1rem;
+}
+footer img{
+height: 3rem;
+margin: 1.5rem 0;
+}
+footer a{
+color: white;
+}
+footer svg.svg-inline--fa{
+font-size: 1.6rem;
+margin: 1.2rem 0.5 0 0;
+}
+footer svg.svg-inline--fa:hover{
+color: #1ebba3!important;
+
+}
+
+hr.socket{
+width: 100%;
+border-top: .2rem solid #666b71;
+margin-top: 3rem;
+}
